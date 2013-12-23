@@ -1,0 +1,223 @@
+-- -------
+-- Trésors
+-- -------
+--
+-- Dialogues affichés lorsque l'on obtient un trésor.
+
+--------------------
+-- Bouclier
+dialog{
+  id = "_treasure.shield.1",
+  icon = 63,
+  text = [[
+Tu as trouvé le
+Bouclier !$0
+
+Tu peux repousser
+les attaques des
+ennemis !
+]]
+}
+--------------------
+
+-- Bouclier de Feu
+dialog{
+  id = "_treasure.shield.2",
+  icon = 64,
+  text = [[
+Tu as trouvé le
+Bouclier de Feu !$0
+Tu es désormais
+protégé contre les
+attaques
+enflammées !
+]]
+}
+--------------------
+
+-- Bouclier Miroir
+dialog{
+  id = "_treasure.shield.3",
+  icon = 65,
+  text = [[
+Tu as trouvé le
+Bouclier Miroir !$0
+
+Tu peux désormais
+contrer les lasers !
+]]
+}
+--------------------
+
+-- Epée 1 (Epée du courage)
+dialog{
+  id = "_treasure.sword.1",
+  icon = 66,
+  text = [[
+Tu as obtenu l'Epée
+du Courage !$0
+
+Tu peux croiser le
+fer et affronter
+les ennemis !
+]]
+}
+--------------------
+
+-- Epée 2 (Glaive Hylien)
+dialog{
+  id = "_treasure.sword.2",
+  icon = 67,
+  next = "_treasure.sword.2.1",
+  text = [[
+$1Tu as trouvé
+le Glaive Hylien !$0$0$0
+Cette nouvelle épée
+]]
+}
+--------------------
+
+dialog{
+  id = "_treasure.sword.2.1",
+  text = [[
+est deux fois plus
+puissante que
+l'ancienne !
+]]
+}
+-----------------------
+
+-- Epée 3 (Sabre du Héros)
+dialog{
+  id = "_treasure.sword.3",
+  icon = 68,
+  next = "_treasure.sword.2.1",
+  text = [[
+$1Tu as trouvé
+le Sabre du Héros !$0$0$0
+Cette nouvelle lame
+]]
+}
+--------------------
+
+-- Epée 4 (Lame Purificatrice)
+dialog{
+  id = "_treasure.sword.4",
+  icon = 69,
+  text = [[
+Tu as trouvé la Lame
+Purificatrice !$0
+La puissance de
+cette épée ultime
+dépasse
+l'entendement...
+]]
+}
+--------------------
+
+-- ----------------
+-- Autres dialogues
+-- ----------------
+-- 
+-- Autres dialogues obligatoires, affichés par le moteur de jeu
+
+--------------------
+
+-- Lorsque l'on ouvre un coffre vide
+dialog{
+  id = "_empty_chest",
+  text = [[
+Ce coffre est vide !
+Tant pis pour toi !
+]]
+}
+-----------------------
+
+-- Lorsqu'on tente de soulever un buisson
+-- au lieu de le couper avec l'épée
+dialog{
+  id = "_cannot_lift_should_cut",
+  skip = "all",
+  text = [[
+Il te faudrait quelque
+chose de tranchant pour
+couper ces buissons...
+]]
+}
+-----------------------
+
+-- Lorsqu'on tente de soulever une pierre
+-- sans avoir de bracelet de force
+-- (Clin d'oeil à Link's Awakening)
+dialog{
+  id = "_cannot_lift_too_heavy",
+  skip = "all",
+  text = [[
+Oh là là, c'est
+bien trop lourd !
+
+Tu n'y arriveras jamais
+rien que par la force
+de tes bras !
+]]
+}
+-----------------------
+
+-- Lorsqu'on tente de soulever une pierre vraiment lourde
+-- en ayant seulement la capacité de soulever les pierres simples
+dialog{
+  id = "_cannot_lift_still_too_heavy",
+  skip = "all",
+  text = [[
+C'est beaucoup trop
+lourd pour toi !
+]]
+}
+-----------------------
+
+-- Lorsqu'on regarde un objet vendu dans un magasin
+-- (message affiché après avoir lu la description de l'objet)
+dialog{
+  id = "_shop.question",
+  text = [[
+Prix : $v rubis.
+Acheter
+Ne pas acheter
+]]
+}
+-----------------------
+
+-- Lorsqu'on veut acheter un objet dans un magasin
+-- mais qu'on n'a pas assez de Rubis
+dialog{
+  id = "_shop.not_enough_money",
+  skip = "all",
+  text = [[
+Désolé, mais tu n'as
+pas assez d'argent !
+]]
+}
+-----------------------
+
+-- Lorsqu'on veut acheter un objet dans un magasin
+-- mais qu'on a déjà le maximum de la quantité possible
+-- (pour des Bombes, des Flèches, etc.)
+dialog{
+  id = "_shop.amount_full",
+  text = [[
+Tu es déjà au maximum !
+]]
+}
+-----------------------
+
+-- Lorsqu'on regarde un interrupteur de cristal
+dialog{
+  id = "_crystal",
+  skip = "all",
+  text = [[
+C'est un interrupteur
+de cristal. Frappe-le
+avec quelque chose...
+]]
+}
+-----------------------
