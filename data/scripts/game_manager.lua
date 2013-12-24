@@ -22,6 +22,23 @@ function game_manager:create(file)
     sol.menu.start(game, game.dialog_box)
   end
 
+  game.on_paused = function()
+    game:get_map():start_dialog("pause_menu", function(answer)
+      if answer == 1 then
+        game:save()
+      end
+
+      game:get_map():start_dialog("pause_menu_2", function(answer)
+      if answer == 1 then
+          sol.main.reset()
+        end
+      end)
+
+      game:set_paused(false)
+    end)
+
+  end
+
   return game
 end
 

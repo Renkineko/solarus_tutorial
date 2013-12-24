@@ -221,3 +221,26 @@ avec quelque chose...
 ]]
 }
 -----------------------
+
+-- Boîte de dialogue du menu pause pour sauvegarder la partie
+dialog{
+  id = "pause_menu",
+  question = true,
+  text = [[
+Sauvegarder la partie ?
+Oui
+Non
+]]
+}
+-----------------------
+
+-- Boîte de dialogue du menu pause pour quitter la partie
+dialog{
+  id = "pause_menu_2",
+  question = true,
+  text = [[
+Quitter la partie ?
+Oui
+Non
+]]
+}
