@@ -1,0 +1,237 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 1024,
+  height = 768,
+  world = "outside",
+  tileset = "light_world",
+  music = "overworld",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 128,
+  width = 144,
+  height = 16,
+  pattern = 177,
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 0,
+  width = 144,
+  height = 8,
+  pattern = 265,
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 8,
+  width = 144,
+  height = 8,
+  pattern = 194,
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 16,
+  width = 144,
+  height = 16,
+  pattern = 192,
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 32,
+  width = 144,
+  height = 96,
+  pattern = 444,
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 776,
+  width = 384,
+  height = 16,
+  pattern = 505,
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 736,
+  width = 48,
+  height = 16,
+  pattern = 505,
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 696,
+  width = 288,
+  height = 40,
+  pattern = 502,
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 736,
+  width = 384,
+  height = 40,
+  pattern = 502,
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 752,
+  width = 32,
+  height = 8,
+  pattern = 523,
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 712,
+  width = 32,
+  height = 8,
+  pattern = 523,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 696,
+  width = 48,
+  height = 16,
+  pattern = 505,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 656,
+  width = 288,
+  height = 40,
+  pattern = 502,
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 688,
+  width = 8,
+  height = 16,
+  pattern = 503,
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 768,
+  width = 8,
+  height = 16,
+  pattern = 503,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1024,
+  y = 144,
+  width = 16,
+  height = 512,
+  transition = 2,
+  destination_map = "outside_b2",
+  destination = "_side",
+}
+
+tile{
+  layer = 2,
+  x = 760,
+  y = 680,
+  width = 288,
+  height = 16,
+  pattern = 512,
+}
+
+tile{
+  layer = 2,
+  x = 760,
+  y = 696,
+  width = 288,
+  height = 40,
+  pattern = 511,
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 736,
+  width = 384,
+  height = 40,
+  pattern = 511,
+}
+
+tile{
+  layer = 2,
+  x = 632,
+  y = 728,
+  width = 8,
+  height = 40,
+  pattern = 513,
+}
+
+tile{
+  layer = 2,
+  x = 752,
+  y = 688,
+  width = 8,
+  height = 40,
+  pattern = 513,
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 720,
+  width = 384,
+  height = 16,
+  pattern = 512,
+}
+
+tile{
+  layer = 2,
+  x = 728,
+  y = 648,
+  width = 8,
+  height = 40,
+  pattern = 513,
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 640,
+  width = 288,
+  height = 16,
+  pattern = 512,
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 656,
+  width = 288,
+  height = 40,
+  pattern = 511,
+}
+

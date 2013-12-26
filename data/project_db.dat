@@ -1,9 +1,35 @@
-0	test_map	Map de test
-1	light_world	Monde extérieur
-2	overworld	Overworld
+0	outside_b2	Outside World B2
+0	village_cave_2f	Village Cave 2F
+0	outside_b1	Outside World B1
+0	library_house	Library
+0	trellis_house	Trellis House
+0	hero_house	Hero House
+1	light_world	Light World
+1	dark_world	Dark World
+1	cave	Cave
+1	house	House
+1	blue_temple	Blue dungeon (LW)
+1	green_temple	Green dungeon (LW)
+1	brown_temple	Brown dungeon (LW)
+1	pink_temple	Pink dungeon (LW)
+1	blue_dungeon	Blue dungeon (DW)
+1	green_dungeon	Green dungeon (DW)
+1	orange_dungeon	Orange dungeon (DW)
+1	gray_dungeon	Gray dungeon (DW)
+1	graybrown_dungeon	Gray-brown dungeon (DW)
+1	grayblue_dungeon	Gray-blue dungeon (DW)
+1	castle	Castle
+1	ice_dungeon	Ice dungeon
+1	forest_dungeon	Forest dungeon
+1	final_dungeon	Final dungeon
+1	old_dungeon	Old school dungeon
+1	intro	Intro
 2	game_over	Game Over
+2	overworld	Overworld
 3	entities/block	Block
 3	entities/chest	Chest
+3	entities/teletransporter	Teletransporter
+3	entities/destination	Destination
 4	arrow_hit	arrow_hit
 4	boomerang	boomerang
 4	boss_fireball	boss_fireball
@@ -63,6 +89,6 @@
 4	walk_on_water	walk_on_water
 4	warp	warp
 4	wrong	wrong
-5	heart	Coeur
-5	shield	Bouclier
-5	sword	Epée
+5	heart	Heart
+5	shield	Shield
+5	sword	Sword

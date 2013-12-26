@@ -14,8 +14,11 @@ function game_manager:create(file)
 
   -- Create the game (but do not start it).
   local game = sol.game.load(file)
-  game:set_starting_location("test_map", "start")
-
+  local exists = sol.game.exists(file)
+  -- if the file does not exists, it's a new game so we set a default starting location
+  if not exists then
+    game:set_starting_location("outside_b2", "start")
+  end
   -- Prepare the dialog box menu.
   game.on_started = function()
     game.dialog_box = dialog_box_builder:create(game)
