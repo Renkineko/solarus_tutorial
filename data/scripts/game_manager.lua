@@ -29,7 +29,7 @@ function game_manager:create(file)
       end
 
       game:get_map():start_dialog("pause_menu_2", function(answer)
-      if answer == 1 then
+      if answer == 2 then
           sol.main.reset()
         end
       end)
