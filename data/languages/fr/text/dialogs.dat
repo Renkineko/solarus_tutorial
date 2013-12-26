@@ -239,7 +239,7 @@ dialog{
   id = "pause_menu_2",
   question = true,
   text = [[
-Quitter la partie ?
+Continuer la partie ?
 Oui
 Non
 ]]
