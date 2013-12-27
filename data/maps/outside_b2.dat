@@ -7688,6 +7688,25 @@ teletransporter{
   destination = "from_outside",
 }
 
+teletransporter{
+  layer = 0,
+  x = 744,
+  y = 168,
+  width = 16,
+  height = 16,
+  transition = 1,
+  destination_map = "village_cave_1f",
+  destination = "from_outside",
+}
+
+destination{
+  layer = 0,
+  x = 752,
+  y = 197,
+  name = "from_village_cave_1f",
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 808,

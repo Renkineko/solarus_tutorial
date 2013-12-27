@@ -10,45 +10,63 @@ properties{
 
 tile{
   layer = 0,
-  x = 880,
+  x = 720,
+  y = 32,
+  width = 32,
+  height = 64,
+  pattern = 447,
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 32,
+  width = 32,
+  height = 96,
+  pattern = 447,
+}
+
+tile{
+  layer = 0,
+  x = 784,
   y = 128,
-  width = 144,
+  width = 240,
   height = 16,
   pattern = 177,
 }
 
 tile{
   layer = 0,
-  x = 880,
+  x = 784,
   y = 0,
-  width = 144,
+  width = 240,
   height = 8,
   pattern = 265,
 }
 
 tile{
   layer = 0,
-  x = 880,
+  x = 784,
   y = 8,
-  width = 144,
+  width = 240,
   height = 8,
   pattern = 194,
 }
 
 tile{
   layer = 0,
-  x = 880,
+  x = 784,
   y = 16,
-  width = 144,
+  width = 240,
   height = 16,
   pattern = 192,
 }
 
 tile{
   layer = 0,
-  x = 880,
+  x = 784,
   y = 32,
-  width = 144,
+  width = 240,
   height = 96,
   pattern = 444,
 }
@@ -143,6 +161,141 @@ tile{
   pattern = 503,
 }
 
+tile{
+  layer = 0,
+  x = 768,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = 71,
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = 185,
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = 186,
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = 220,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = 220,
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = 220,
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = 73,
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = 129,
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = 129,
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = 219,
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 0,
+  width = 16,
+  height = 48,
+  pattern = 128,
+}
+
 teletransporter{
   layer = 0,
   x = 1024,
@@ -152,6 +305,15 @@ teletransporter{
   transition = 2,
   destination_map = "outside_b2",
   destination = "_side",
+}
+
+tile{
+  layer = 2,
+  x = 736,
+  y = 656,
+  width = 288,
+  height = 40,
+  pattern = 511,
 }
 
 tile{
@@ -224,14 +386,5 @@ tile{
   width = 288,
   height = 16,
   pattern = 512,
-}
-
-tile{
-  layer = 2,
-  x = 736,
-  y = 656,
-  width = 288,
-  height = 40,
-  pattern = 511,
 }
 

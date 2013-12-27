@@ -19,6 +19,7 @@ function game_manager:create(file)
   if not exists then
     game:set_starting_location("outside_b2", "start")
   end
+
   -- Prepare the dialog box menu.
   game.on_started = function()
     game.dialog_box = dialog_box_builder:create(game)

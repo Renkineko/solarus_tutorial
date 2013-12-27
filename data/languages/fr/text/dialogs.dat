@@ -234,7 +234,7 @@ Non
 }
 -----------------------
 
--- Boîte de dialogue du menu pause pour quitter la partie
+-- Boîte de dialogue du menu pause pour continuer la partie
 dialog{
   id = "pause_menu_2",
   question = true,
