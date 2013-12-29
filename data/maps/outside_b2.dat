@@ -9200,6 +9200,38 @@ destructible{
   subtype = "grass",
 }
 
+destination{
+  layer = 0,
+  x = 96,
+  y = 437,
+  name = "heart_pool",
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 64,
+  y = 344,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "from_b1_pool",
+}
+
+teletransporter{
+  layer = 0,
+  x = 88,
+  y = 408,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "from_b1_pool",
+}
+
 tile{
   layer = 1,
   x = 808,

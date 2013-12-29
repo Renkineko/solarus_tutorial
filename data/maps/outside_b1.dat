@@ -4366,15 +4366,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 480,
-  y = 520,
-  width = 16,
-  height = 16,
-  pattern = 1227,
-}
-
-tile{
-  layer = 0,
   x = 768,
   y = 328,
   width = 16,
@@ -4537,8 +4528,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 544,
-  y = 528,
+  x = 472,
+  y = 544,
   width = 8,
   height = 8,
   pattern = 12,
@@ -4832,6 +4823,69 @@ tile{
   pattern = 10,
 }
 
+tile{
+  layer = 0,
+  x = 560,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = 1227,
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 488,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = 10,
+}
+
 teletransporter{
   layer = 0,
   x = 1024,
@@ -4861,6 +4915,253 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 48,
+}
+
+destination{
+  layer = 0,
+  x = 480,
+  y = 533,
+  name = "from_b1_pool",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 632,
+  y = 533,
+  name = "clover_left",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 696,
+  y = 413,
+  name = "clover_up",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 792,
+  y = 533,
+  name = "clover_right",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 744,
+  y = 373,
+  name = "diamond_left",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 760,
+  y = 341,
+  name = "diamond_up_left",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 888,
+  y = 341,
+  name = "diamond_up_right",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 912,
+  y = 373,
+  name = "diamond_right",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 824,
+  y = 477,
+  name = "diamond_down",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 952,
+  y = 413,
+  name = "spade_up",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 864,
+  y = 541,
+  name = "spade_left",
+  direction = -1,
+}
+
+destination{
+  layer = 0,
+  x = 1008,
+  y = 541,
+  name = "spade_right",
+  direction = -1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 904,
+  y = 376,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+destination{
+  layer = 0,
+  x = 552,
+  y = 533,
+  name = "bad_direction_maze",
+  direction = -1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 560,
+  y = 520,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "diamond_right",
+}
+
+teletransporter{
+  layer = 0,
+  x = 816,
+  y = 480,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 856,
+  y = 512,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 768,
+  y = 328,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 864,
+  y = 328,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1000,
+  y = 512,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 624,
+  y = 504,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 784,
+  y = 504,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "bad_direction_maze",
+}
+
+teletransporter{
+  layer = 0,
+  x = 736,
+  y = 376,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "clover_right",
+}
+
+teletransporter{
+  layer = 0,
+  x = 704,
+  y = 400,
+  width = 16,
+  height = 16,
+  sound = "warp",
+  transition = 1,
+  destination_map = "outside_b1",
+  destination = "spade_left",
+}
+
+teletransporter{
+  layer = 0,
+  x = 928,
+  y = 400,
+  width = 16,
+  height = 16,
+  transition = 1,
+  destination_map = "outside_b2",
+  destination = "heart_pool",
 }
 
 tile{

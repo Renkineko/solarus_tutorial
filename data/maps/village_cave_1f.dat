@@ -288,6 +288,15 @@ stairs{
   subtype = "0",
 }
 
+chest{
+  layer = 1,
+  x = 216,
+  y = 93,
+  treasure_name = "flippers",
+  treasure_savegame_variable = "village_cave_1f_chest_flippers",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 2,
   x = 0,

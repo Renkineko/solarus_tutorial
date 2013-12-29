@@ -115,6 +115,54 @@ l'entendement...
 }
 --------------------
 
+-- Palmes
+dialog{
+  id = "_treasure.flippers.1",
+  icon = 26,
+  text = [[
+Tu as trouvé
+les Palmes !
+
+Tu peux désormais
+nager en eau
+profonde !
+]]
+}
+-------------------
+
+-- Gants de fer
+dialog{
+  id = "_treasure.glove.1",
+  icon = 32,
+  text = [[
+Tu as trouvé
+les Gants de Fer !
+
+Tu peux désormais
+soulever les
+pierres et crânes !
+]]
+}
+-------------------
+
+-- Gants d'or
+dialog{
+  id = "_treasure.glove.2",
+  icon = 33,
+  text = [[
+Tu as trouvé
+les Gants d'Or !
+
+Tu te sens plus
+puissant que
+jamais !
+Tu peux soulever
+les pierres et
+crânes noirs
+]]
+}
+-------------------
+
 -- ----------------
 -- Autres dialogues
 -- ----------------
