@@ -1183,15 +1183,6 @@ destructible{
 
 chest{
   layer = 1,
-  x = 288,
-  y = 45,
-  treasure_name = "sword",
-  treasure_savegame_variable = "sword_chest_1",
-  sprite = "entities/chest",
-}
-
-chest{
-  layer = 1,
   x = 104,
   y = 45,
   treasure_name = "shield",

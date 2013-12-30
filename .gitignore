@@ -1,1 +1,6 @@
 /.project
+/*.dll
+/*.txt
+/*.exe
+/*.lnk
+/editeur
