@@ -866,10 +866,29 @@ tile{
   pattern = 363,
 }
 
+tile{
+  layer = 1,
+  x = 56,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = 364,
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = 364,
+}
+
 chest{
   layer = 1,
   x = 248,
   y = 53,
+  name = "flippers_chest",
   treasure_name = "flippers",
   treasure_savegame_variable = "village_cave_1f_chest_flippers",
   sprite = "entities/chest",
@@ -937,6 +956,44 @@ jumper{
   height = 64,
   direction = 0,
   jump_length = 40,
+}
+
+switch{
+  layer = 1,
+  x = 40,
+  y = 128,
+  name = "enable_chest_switch",
+  subtype = "1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destructible{
+  layer = 1,
+  x = 64,
+  y = 141,
+  subtype = "pot",
+}
+
+destructible{
+  layer = 1,
+  x = 48,
+  y = 141,
+  subtype = "pot",
+}
+
+destructible{
+  layer = 1,
+  x = 48,
+  y = 157,
+  subtype = "pot",
+}
+
+destructible{
+  layer = 1,
+  x = 64,
+  y = 157,
+  subtype = "pot",
 }
 
 tile{
