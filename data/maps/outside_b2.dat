@@ -184,7 +184,7 @@ tile{
   x = 1008,
   y = 232,
   width = 16,
-  height = 240,
+  height = 264,
   pattern = 1357,
 }
 
@@ -8720,6 +8720,24 @@ tile{
   pattern = 720,
 }
 
+tile{
+  layer = 0,
+  x = 1008,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = 1357,
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = 1348,
+}
+
 destination{
   layer = 0,
   x = 480,
@@ -9196,13 +9214,15 @@ teletransporter{
   destination = "from_outside",
 }
 
-tile{
-  layer = 1,
-  x = 808,
-  y = 64,
-  width = 32,
-  height = 8,
-  pattern = 489,
+teletransporter{
+  layer = 0,
+  x = 1024,
+  y = 480,
+  width = 16,
+  height = 48,
+  transition = 2,
+  destination_map = "outside_b3",
+  destination = "_side",
 }
 
 tile{
@@ -9212,6 +9232,15 @@ tile{
   width = 16,
   height = 48,
   pattern = 1391,
+}
+
+tile{
+  layer = 1,
+  x = 808,
+  y = 64,
+  width = 32,
+  height = 8,
+  pattern = 489,
 }
 
 tile{
