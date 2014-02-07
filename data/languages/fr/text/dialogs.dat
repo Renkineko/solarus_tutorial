@@ -163,6 +163,75 @@ crânes noirs
 }
 -------------------
 
+-- 1 Rubis
+dialog{
+  id = "_treasure.rupee.1",
+  icon = 90,
+  text = [[
+Tu as trouvé
+1 Rubis !
+]]
+}
+-------------------
+ 
+-- 5 Rubis
+dialog{
+  id = "_treasure.rupee.2",
+  icon = 91,
+  text = [[
+Tu as trouvé
+5 Rubis !
+]]
+}
+-------------------
+ 
+-- 20 Rubis
+dialog{
+  id = "_treasure.rupee.3",
+  icon = 92,
+  text = [[
+Tu as trouvé
+20 Rubis !
+]]
+}
+-------------------
+ 
+-- 50 Rubis
+dialog{
+  id = "_treasure.rupee.4",
+  icon = 93,
+  text = [[
+Tu as trouvé
+50 Rubis !
+Merveilleux !
+]]
+}
+-------------------
+ 
+-- 100 Rubis
+dialog{
+  id = "_treasure.rupee.5",
+  icon = 94,
+  text = [[
+Tu as trouvé
+100 Rubis !
+Fantastique !
+]]
+}
+-------------------
+ 
+-- 300 Rubis
+dialog{
+  id = "_treasure.rupee.6",
+  icon = 95,
+  text = [[
+Tu as trouvé
+300 Rubis !
+Incroyable !
+]]
+}
+-------------------
+
 -- ----------------
 -- Autres dialogues
 -- ----------------

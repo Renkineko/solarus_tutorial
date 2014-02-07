@@ -18,6 +18,7 @@ function game_manager:create(file)
   -- if the file does not exists, it's a new game so we set a default starting location
   if not exists then
     game:set_starting_location("outside_b2", "start")
+    game:set_max_money(100)
   end
 
   -- Prepare the dialog box menu.
@@ -42,7 +43,15 @@ function game_manager:create(file)
     end)
 
   end
-
+  
+  local rupee_icon_img = sol.surface.create("hud/rupee_icon.png")
+  local rupee_text = sol.text_surface.create()
+  game.on_draw = function(game, dst_surface)
+    rupee_text:set_text(game:get_money())
+    rupee_icon_img:draw_region(0, 0, 12, 12, dst_surface, 10, 220)
+    rupee_text:draw(dst_surface, 25, 228)
+  end
+  
   return game
 end
 

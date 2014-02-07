@@ -223,6 +223,33 @@ stairs{
   subtype = "4",
 }
 
+chest{
+  layer = 0,
+  x = 296,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 312,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 2,
+  sprite = "entities/chest",
+}
+
+chest{
+  layer = 0,
+  x = 328,
+  y = 173,
+  treasure_name = "rupee",
+  treasure_variant = 5,
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 1,
   x = 16,
