@@ -231,6 +231,87 @@ Incroyable !
 ]]
 }
 -------------------
+-- Miroir Mystique
+dialog{
+  id = "_treasure.mystic_mirror.1",
+  icon = 14,
+  text = [[
+Tu as trouvé le
+Miroir Mystique !$0
+ 
+A quoi peut-il bien
+servir ?
+]]
+}
+-------------------
+ 
+-- Pierre de Feu
+dialog{
+  id = "_treasure.fire_stone.1",
+  icon = 34,
+  text = [[
+Tu as trouvé la
+Pierre de Feu !$0
+ 
+Etrangement, elle
+ne brûle pas les
+mains qui l'ont.
+]]
+}
+-------------------
+ 
+-- Clé d'Os
+dialog{
+  id = "_treasure.bone_key.1",
+  icon = 20,
+  text = [[
+Tu as trouvé la
+Clé d'Os !$0
+ 
+S'il y a une clé,
+il doit y avoir une
+serrure à ouvrir !
+]]
+}
+-------------------
+ 
+-- Coeur
+dialog{
+  id = "_treasure.heart.1",
+  icon = 84,
+  text = [[
+Tu as trouvé un
+Coeur de Vie !$0
+ 
+Ta fatigue
+s'estompe
+légèrement.
+]]
+}
+-------------------
+ 
+-- Description Miroir Mystique
+dialog{
+  id = "shop.desc_mystic_mirror",
+  icon = 14,
+  text = [[
+Un magnifique mais
+étrange miroir. 
+]]
+}
+-------------------
+ 
+-- Description Coeur
+dialog{
+  id = "shop.desc_heart",
+  icon = 84,
+  text = [[
+Un petit Coeur qui
+pourrait te donner
+du courage.
+]]
+}
+-------------------
 
 -- ----------------
 -- Autres dialogues
@@ -296,6 +377,7 @@ lourd pour toi !
 -- (message affiché après avoir lu la description de l'objet)
 dialog{
   id = "_shop.question",
+  question = true,
   text = [[
 Prix : $v rubis.
 Acheter

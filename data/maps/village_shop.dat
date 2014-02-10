@@ -229,6 +229,7 @@ chest{
   y = 77,
   treasure_name = "rupee",
   treasure_variant = 3,
+  treasure_savegame_variable = "shop_chest_stealed_20",
   sprite = "entities/chest",
 }
 
@@ -237,7 +238,8 @@ chest{
   x = 312,
   y = 77,
   treasure_name = "rupee",
-  treasure_variant = 2,
+  treasure_variant = 4,
+  treasure_savegame_variable = "shop_chest_stealed_50",
   sprite = "entities/chest",
 }
 
@@ -246,7 +248,8 @@ chest{
   x = 328,
   y = 173,
   treasure_name = "rupee",
-  treasure_variant = 5,
+  treasure_variant = 6,
+  treasure_savegame_variable = "shop_chest_stealed_300",
   sprite = "entities/chest",
 }
 
@@ -1355,6 +1358,25 @@ jumper{
   height = 40,
   direction = 0,
   jump_length = 40,
+}
+
+shop_item{
+  layer = 1,
+  x = 40,
+  y = 136,
+  treasure_name = "mystic_mirror",
+  treasure_savegame_variable = "shop_mystic_mirror",
+  price = 35,
+  dialog = "shop.desc_mystic_mirror",
+}
+
+shop_item{
+  layer = 1,
+  x = 40,
+  y = 104,
+  treasure_name = "heart",
+  price = 5,
+  dialog = "shop.desc_heart",
 }
 
 tile{
