@@ -1379,6 +1379,16 @@ shop_item{
   dialog = "shop.desc_heart",
 }
 
+npc{
+  layer = 1,
+  x = 80,
+  y = 53,
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager6",
+  behavior = "dialog#shop.npc",
+}
+
 tile{
   layer = 2,
   x = 0,

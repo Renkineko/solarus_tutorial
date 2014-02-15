@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 
 local function teleport_sensor(to_sensor, from_sensor)
   local hero_x, hero_y = hero:get_position()
@@ -36,4 +37,28 @@ for _, entity in ipairs(map:get_entities("grass3")) do
   function entity:on_removed()
     map:set_entities_enabled("grass3", false)
   end
+end
+
+function mirror_npc:on_interaction()
+    local gave_mirror = game:get_value('gave_mirror')
+    if gave_mirror then
+        map:start_dialog('forest.mirror_npc.already_gave_mirror')
+        return
+    end
+    
+    local mirror = game:get_item("mystic_mirror")
+    if mirror:get_variant() == 0 then
+        map:start_dialog('forest.mirror_npc.wants_mirror')
+    else
+        map:start_dialog('forest.mirror_npc.asks_mirror', function(answer)
+            if answer == 1 then
+                map:start_dialog('forest.mirror_npc.yes', function()
+                    mirror:set_variant(0)
+                    hero:start_treasure('fire_stone', 1, "gave_mirror")
+                end)
+            else
+                map:start_dialog('forest.mirror_npc.no')
+            end
+        end)
+    end
 end

@@ -9225,6 +9225,26 @@ teletransporter{
   destination = "_side",
 }
 
+npc{
+  layer = 0,
+  x = 512,
+  y = 533,
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager9",
+  behavior = "dialog#b2_drunk_guy.argue_with_friend",
+}
+
+npc{
+  layer = 0,
+  x = 536,
+  y = 525,
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager3",
+  behavior = "dialog#b2_old_guy.argue_with_friend",
+}
+
 tile{
   layer = 1,
   x = 1008,

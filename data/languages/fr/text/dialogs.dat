@@ -312,6 +312,289 @@ du courage.
 ]]
 }
 -------------------
+ 
+-- Vendeur du village
+dialog{
+  id = "shop.npc",
+  text = [[
+Salutations, voyageur.
+Bienvenue à la Maison
+des Affaires !
+Choisis l'objet que tu
+souhaites acheter.
+]]
+}
+-------------------
+ 
+-- PNJ au miroir
+dialog{
+  id = "forest.mirror_npc.wants_mirror",
+  text = [[
+Je suis archéologue
+et il me manque un
+objet d'une grande
+rareté. Il s'agit d'un
+miroir qui permet de
+voir le monde par les
+yeux de la déesse et
+dévoile ses plus grands
+secrets.
+]]
+}
+
+dialog{
+  id = "forest.mirror_npc.asks_mirror",
+  question = true,
+  text = [[
+Tu... Tu possèdes le
+Miroir Mystique !?
+Il me le FAUT ! Si tu
+me le donnes, tu ne le
+regretteras pas. J'ai
+en ma possession des
+reliques intéressantes.
+Donner le miroir...
+Pas question !
+]]
+}
+
+dialog{
+  id = "forest.mirror_npc.yes",
+  text = [[
+Vraiment ? Aussi
+simplement que ça ? Je
+ne sais pas quoi dire.
+Prends donc cette
+Pierre de Feu, c'est
+une roche très rare !
+]]
+}
+
+dialog{
+  id = "forest.mirror_npc.no",
+  text = [[
+Je m'en doutais... Je
+ne t'en veux pas.
+J'aurais sans doute
+réagi pareil si j'avais
+un trésor d'une telle
+rareté. Mais si tu
+changes d'avis, surtout
+n'hésite pas. Je reste
+ici encore un peu...
+]]
+}
+
+dialog{
+  id = "forest.mirror_npc.already_gave_mirror",
+  text = [[
+Oh, c'est toi. Encore
+merci pour le Miroir
+Mystique, il m'a fait
+énormément avancer dans
+mes recherches.
+
+La Pierre de Feu
+t'a-t-elle été utile ?
+]]
+}
+-------------------
+ 
+-- Homme saoûl se disputant
+dialog{
+  id = "b2_drunk_guy.argue_with_friend",
+  text = [[
+Tu n'arrêtes pas *hips*
+de... De... De me dire
+des méchancetés, juste
+parce qu... *hips*
+parce que... Je bois un
+tout petit peu de rien
+du tout... Tu crois que
+*hips* t'es mieux toi,
+à mettre tes pieds sur 
+le banc où les autres
+s'assoient !?
+]]
+}
+-------------------
+
+-- Vieil homme se disputant
+dialog{
+  id = "b2_old_guy.argue_with_friend",
+  text = [[
+Ben voyons, toujours
+les mêmes excuses ! Je
+ne suis pas méchant,
+nom de nom de nom de
+nom ! J'essaye juste de
+t'aider ! Et arrête de
+me reprocher de mettre
+mes pieds n'importe où.
+
+Je mets les pieds où je
+veux, et c'est souvent
+au cul des mecs bourrés
+alors maintenant tu te
+tais ou ça va tomber !
+]]
+}
+-------------------
+
+-- Bibliothèque RDC : accueil
+dialog{
+  id = "library_1f.reception",
+  text = [[
+Bonjour et bienvenue
+à la Bibliothèque.
+$0
+A cet étage vous avez
+de gauche à droite et
+de l'entrée au fond :
+Cuisine
+Biographie
+Histoire d'Hyrule
+Fantasy, S-F
+Théâtre et humour
+Polars et Thriller
+BD, contes et livres
+pour enfants
+Jardinerie, tourisme
+Philosophie, politique
+et sciences économiques
+Vous pouvez aller au
+sous-sol si vous ne
+trouvez pas votre
+bonheur ici.
+]]
+}
+-------------------
+
+-- Bibliothèque SS1 : accueil
+dialog{
+  id = "library_b1.reception",
+  text = [[
+Bonjour. C'est rare de
+voir des gens descendre
+ici...
+Vous avez dans cette
+salle les rayons sur
+l'esotérisme. Un peu
+plus bas vous avez
+les recueils sur la
+géologie, la géographie
+et les documentaires.
+Plus loin encore, vous
+trouverez la section
+pour adultes, mais je
+doute que vous ayez
+l'âge requis. Attention
+je veille au grain !
+Nous vendons aussi des
+billets de concert...
+]]
+}
+-------------------
+ 
+-- PNJ à la Pierre de Feu
+dialog{
+  id = "library_b1.stone_collector_npc.wants_fire_stone",
+  text = [[
+Hey, avez-vous lu cet
+ouvrage exceptionnel
+sur la géologie du
+monde ? Cela me titille
+drôlement et j'ai envie
+de me lancer dans une
+collection...
+C'est si passionant !
+]]
+}
+
+dialog{
+  id = "library_b1.stone_collector_npc.asks_fire_stone",
+  question = true,
+  text = [[
+J'ai bien réfléchis et
+c'est décidé, je vais
+collectionner certains
+éléments donnés par
+notre monde. Pour bien
+commencer, il me faut
+une Pierre de Feu. J'ai
+entendu dire que vous
+en avez une. Je pense
+que nous avons tout
+deux à gagner d'un
+échange. Qu'en dites-
+vous ?
+Je ne l'utilise pas
+J'y réfléchirai...
+]]
+}
+
+dialog{
+  id = "library_b1.stone_collector_npc.yes",
+  text = [[
+Ahah, oui, c'est
+incroyable... Chose
+promise, chose due : je
+vous donne la Clé d'Os.
+Attention, elle est
+fragile, ne l'utilisez
+que sur la porte pour
+laquelle elle est
+destinée. Hélas, mes
+recherches ne m'ont
+jamais permis de
+trouver cette porte.
+Puissiez-vous être plus
+chanceux que moi.
+]]
+}
+
+dialog{
+  id = "library_b1.stone_collector_npc.no",
+  text = [[
+Dommage. Elle aurait
+été ma pièce maîtresse,
+autour de laquelle mon
+but eut été construit.
+Si vous changez d'avis,
+je suis à votre entière
+disposition, à lire ces
+ouvrages.
+]]
+}
+
+dialog{
+  id = "library_b1.stone_collector_npc.obtained_bone_key",
+  text = [[
+J'ai fait une super
+découverte grâce à la
+Pierre de Feu, et c'est
+un peu grâce à vous,
+d'une certaine manière.
+$0
+Figurez-vous que ce
+n'est pas une roche,
+mais un minerai !
+Je sais, moi aussi j'en
+suis resté comme deux
+ronds de flan !
+]]
+}
+-------------------
+
+-- Le Bibliothécaire (Pratchett)
+dialog{
+  id = "library_b1.librarian",
+  text = [[
+Ook ook. Eek.
+]]
+}
+-------------------
+
 
 -- ----------------
 -- Autres dialogues
@@ -342,7 +625,7 @@ chose de tranchant pour
 couper ces buissons...
 ]]
 }
------------------------
+-------------------
 
 -- Lorsqu'on tente de soulever une pierre
 -- sans avoir de bracelet de force

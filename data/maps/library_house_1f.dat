@@ -281,7 +281,7 @@ tile{
 tile{
   layer = 1,
   x = 40,
-  y = 144,
+  y = 136,
   width = 16,
   height = 32,
   pattern = 42,
@@ -290,7 +290,7 @@ tile{
 tile{
   layer = 1,
   x = 56,
-  y = 144,
+  y = 136,
   width = 96,
   height = 32,
   pattern = 44,
@@ -299,7 +299,7 @@ tile{
 tile{
   layer = 1,
   x = 152,
-  y = 144,
+  y = 136,
   width = 16,
   height = 32,
   pattern = 43,
@@ -1709,6 +1709,16 @@ teletransporter{
   transition = 1,
   destination_map = "library_house_b1",
   destination = "from_1f",
+}
+
+npc{
+  layer = 1,
+  x = 80,
+  y = 197,
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager14",
+  behavior = "dialog#library_1f.reception",
 }
 
 tile{

@@ -7778,6 +7778,16 @@ destructible{
   subtype = "grass",
 }
 
+npc{
+  layer = 0,
+  x = 72,
+  y = 421,
+  name = "mirror_npc",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager10",
+}
+
 tile{
   layer = 1,
   x = 352,

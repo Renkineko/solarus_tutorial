@@ -1131,6 +1131,27 @@ stairs{
   subtype = "4",
 }
 
+npc{
+  layer = 0,
+  x = 80,
+  y = 349,
+  name = "stone_collector_npc",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/static_villager1",
+}
+
+npc{
+  layer = 0,
+  x = 576,
+  y = 317,
+  name = "the_librarian",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/monkey",
+  behavior = "dialog#library_b1.librarian",
+}
+
 tile{
   layer = 1,
   x = 168,
@@ -2804,6 +2825,16 @@ chest{
   treasure_name = "sword",
   treasure_savegame_variable = "sword_chest_1",
   sprite = "entities/chest",
+}
+
+npc{
+  layer = 1,
+  x = 240,
+  y = 85,
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/thief",
+  behavior = "dialog#library_b1.reception",
 }
 
 tile{
