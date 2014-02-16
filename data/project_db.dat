@@ -63,6 +63,7 @@
 3	entities/chest	Chest
 3	entities/teletransporter	Teletransporter
 3	entities/destination	Destination
+3	entities/sign	Sign
 3	npc/ganon	Ganon
 3	npc/great_fairy	Great Fairy
 3	npc/monkey	Monkey
