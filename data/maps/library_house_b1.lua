@@ -1,6 +1,17 @@
 local map = ...
 local game = map:get_game()
 
+function receptionnist_counter:on_interaction()
+    receptionnist:get_sprite():set_direction(3)
+    map:start_dialog('library_b1.reception')
+end
+
+function librarian_shelf:on_interaction()
+    the_librarian:get_sprite():set_direction(3)
+    map:start_dialog('library_b1.librarian')
+end
+
+
 function stone_collector_npc:on_interaction()
     local gave_fire_stone = game:get_value('obtained_bone_key')
     if gave_fire_stone then
@@ -20,6 +31,17 @@ function stone_collector_npc:on_interaction()
                 end)
             else
                 map:start_dialog('library_b1.stone_collector_npc.no')
+            end
+        end)
+    end
+end
+
+for _, entity in ipairs(map:get_entities("npc_book_")) do
+    function entity:on_interaction()
+        local dialog_name = entity:get_name():sub(10)
+        map:start_dialog('library_b1.book_'..dialog_name, function(answer)
+            if answer == 2 then
+                map:start_dialog('library_b1.read_'..dialog_name)
             end
         end)
     end

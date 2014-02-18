@@ -1143,13 +1143,76 @@ npc{
 
 npc{
   layer = 0,
-  x = 576,
-  y = 317,
-  name = "the_librarian",
+  x = 104,
+  y = 333,
+  name = "npc_book_geology",
   direction = 3,
-  subtype = "1",
-  sprite = "npc/monkey",
-  behavior = "dialog#library_b1.librarian",
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 200,
+  y = 333,
+  name = "npc_book_geography",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 232,
+  y = 333,
+  name = "npc_book_documentary",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 400,
+  y = 349,
+  name = "npc_book_war",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 568,
+  y = 349,
+  name = "npc_forbidden_book",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#library_b1.forbidden_book",
+}
+
+npc{
+  layer = 0,
+  x = 392,
+  y = 301,
+  name = "npc_book_torture",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 0,
+  x = 488,
+  y = 349,
+  name = "npc_forbidden_book_2",
+  direction = 3,
+  subtype = "0",
+  behavior = "dialog#library_b1.forbidden_book",
+}
+
+npc{
+  layer = 0,
+  x = 544,
+  y = 301,
+  name = "librarian_shelf",
+  direction = 3,
+  subtype = "0",
 }
 
 tile{
@@ -2831,10 +2894,85 @@ npc{
   layer = 1,
   x = 240,
   y = 85,
+  name = "receptionnist",
   direction = 3,
   subtype = "1",
   sprite = "npc/thief",
   behavior = "dialog#library_b1.reception",
+}
+
+npc{
+  layer = 1,
+  x = 240,
+  y = 117,
+  name = "receptionnist_counter",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 544,
+  y = 277,
+  name = "the_librarian",
+  direction = 3,
+  subtype = "1",
+  sprite = "npc/monkey",
+  behavior = "dialog#library_b1.librarian",
+}
+
+npc{
+  layer = 1,
+  x = 72,
+  y = 77,
+  name = "npc_book_esoterism1",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 80,
+  y = 125,
+  name = "npc_book_religion1",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 64,
+  y = 173,
+  name = "npc_book_mythology1",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 112,
+  y = 125,
+  name = "npc_book_religion2",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 104,
+  y = 77,
+  name = "npc_book_esoterism2",
+  direction = 3,
+  subtype = "0",
+}
+
+npc{
+  layer = 1,
+  x = 96,
+  y = 173,
+  name = "npc_book_mythology2",
+  direction = 3,
+  subtype = "0",
 }
 
 tile{

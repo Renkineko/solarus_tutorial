@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 744,
+  y = 712,
+  width = 32,
+  height = 8,
+  pattern = 523,
+}
+
+tile{
+  layer = 0,
   x = 576,
   y = 480,
   width = 32,
@@ -236,7 +245,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 776,
+  y = 792,
   width = 384,
   height = 16,
   pattern = 505,
@@ -244,9 +253,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1000,
-  y = 736,
-  width = 48,
+  x = 760,
+  y = 744,
+  width = 288,
   height = 16,
   pattern = 505,
 }
@@ -254,7 +263,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 696,
+  y = 704,
   width = 288,
   height = 40,
   pattern = 502,
@@ -263,7 +272,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 736,
+  y = 752,
   width = 384,
   height = 40,
   pattern = 502,
@@ -272,16 +281,7 @@ tile{
 tile{
   layer = 0,
   x = 1008,
-  y = 752,
-  width = 32,
-  height = 8,
-  pattern = 523,
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 712,
+  y = 760,
   width = 32,
   height = 8,
   pattern = 523,
@@ -291,7 +291,7 @@ tile{
   layer = 0,
   x = 736,
   y = 696,
-  width = 48,
+  width = 288,
   height = 16,
   pattern = 505,
 }
@@ -317,7 +317,7 @@ tile{
 tile{
   layer = 0,
   x = 632,
-  y = 768,
+  y = 784,
   width = 8,
   height = 16,
   pattern = 503,
@@ -4886,6 +4886,15 @@ tile{
   pattern = 10,
 }
 
+tile{
+  layer = 0,
+  x = 752,
+  y = 736,
+  width = 8,
+  height = 16,
+  pattern = 503,
+}
+
 teletransporter{
   layer = 0,
   x = 1024,
@@ -5176,7 +5185,7 @@ tile{
 tile{
   layer = 2,
   x = 760,
-  y = 680,
+  y = 688,
   width = 288,
   height = 16,
   pattern = 512,
@@ -5185,7 +5194,7 @@ tile{
 tile{
   layer = 2,
   x = 760,
-  y = 696,
+  y = 704,
   width = 288,
   height = 40,
   pattern = 511,
@@ -5194,7 +5203,7 @@ tile{
 tile{
   layer = 2,
   x = 640,
-  y = 736,
+  y = 752,
   width = 384,
   height = 40,
   pattern = 511,
@@ -5203,7 +5212,7 @@ tile{
 tile{
   layer = 2,
   x = 632,
-  y = 728,
+  y = 744,
   width = 8,
   height = 40,
   pattern = 513,
@@ -5212,7 +5221,7 @@ tile{
 tile{
   layer = 2,
   x = 752,
-  y = 688,
+  y = 696,
   width = 8,
   height = 40,
   pattern = 513,
@@ -5221,7 +5230,7 @@ tile{
 tile{
   layer = 2,
   x = 640,
-  y = 720,
+  y = 736,
   width = 384,
   height = 16,
   pattern = 512,

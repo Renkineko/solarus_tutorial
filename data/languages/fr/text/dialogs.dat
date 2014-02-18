@@ -326,6 +326,60 @@ souhaites acheter.
 }
 -------------------
  
+-- Pancarte propriété privée
+dialog{
+  id = "outside_b2.get_out",
+  text = [[
+PROPRIÉTÉ PRIVÉE !
+DÉGAGEZ OU NOUS LÂCHONS
+LES CHIENS !
+]]
+}
+-------------------
+
+-- Pancarte propriété privée
+dialog{
+  id = "outside_b2.shop_sign",
+  text = [[
+- Maison des Affaires -
+Des prix, des remises,
+du matos de qualité !
+]]
+}
+-------------------
+
+-- Pancarte propriété privée
+dialog{
+  id = "outside_b2.lair_mailbox",
+  text = [[
+Le nom sur la boîte
+aux lettres est effacé.
+Étrange.
+]]
+}
+-------------------
+
+-- Pancarte propriété privée
+dialog{
+  id = "outside_b2.link_mailbox",
+  text = [[
+Aucun courrier. C'est
+mieux que des factures,
+mais un peu triste.
+]]
+}
+-------------------
+
+-- Pancarte propriété privée
+dialog{
+  id = "outside_b2.library_mailbox",
+  text = [[
+Bibliothèque du village
+  - PAS DE PUB SVP -
+]]
+}
+-------------------
+ 
 -- PNJ au miroir
 dialog{
   id = "forest.mirror_npc.wants_mirror",
@@ -444,6 +498,7 @@ tais ou ça va tomber !
 -- Bibliothèque RDC : accueil
 dialog{
   id = "library_1f.reception",
+  skip = "all",
   text = [[
 Bonjour et bienvenue
 à la Bibliothèque.
@@ -456,7 +511,8 @@ Biographie
 Histoire d'Hyrule
 Fantasy, S-F
 Théâtre et humour
-Polars et Thriller
+Policiers
+Thrillers
 BD, contes et livres
 pour enfants
 Jardinerie, tourisme
@@ -470,24 +526,1001 @@ bonheur ici.
 }
 -------------------
 
+-- Livre sans intérêt
+dialog{
+  id = "library_1f.not_interesting_book",
+  skip = "all",
+  text = [[
+Un livre pas très
+intéressant...
+]]
+}
+-------------------
+
+-- Thriller, attention spoiler !
+dialog{
+  id = "library_1f.thriller_spoiler",
+  skip = "all",
+  text = [[
+Un thriller. Impossible
+à feuilleter sans se
+spoiler.
+]]
+}
+-------------------
+
+-- Livre de cuisine
+dialog{
+  id = "library_1f.book_cook",
+  question = true,
+  text = [[
+Un livre de cuisine
+Le reposer
+Le dévorer
+]]
+}
+
+dialog{
+  id = "library_1f.read_cook",
+  skip = "all",
+  text = [[
+Recettes de cuisine
+pour hylien gourmand.
+
+Chausson de poulet
+Préparation : 10mn
+Cuisson : 10mn
+Ingrédients :
+2 blancs de poulet,
+150g de champignons,
+125ml de crème,
+1 jaune d'oeuf,
+pâte feuilletée.
+Faire cuire le poulet
+coupé en dés puis le
+refroidir. Hacher le
+poulet, les champignons
+et la crème en y
+ajoutant un peu de
+ciboulette. Déposer
+le mélange sur la pâte
+feuilletée et la
+refermer, faire dorer
+le chausson grâce au
+jaune d'oeuf et faire
+cuire à 200°C.
+]]
+}
+-------------------
+
+-- Livre de pâtisserie
+dialog{
+  id = "library_1f.book_dessert",
+  question = true,
+  text = [[
+Un livre de pâtisserie
+L'oublier
+Le feuilleter
+]]
+}
+
+dialog{
+  id = "library_1f.read_dessert",
+  skip = "all",
+  text = [[
+Recettes de dessert
+pour hylien gourmand
+
+Gâteau chocolat
+Préparation : 10mn
+Cuisson : 30mn
+Ingrédients :
+200g de chocolat,
+100g de beurre,
+3 oeufs,
+50g de farine,
+100g de sucre.
+Dans une casserole,
+faire fondre le
+chocolat et le beurre
+à feu très doux. Dans
+un saladier, ajoutez le
+sucre, les oeufs, la
+farine. Mélangez.
+Ajoutez le mélange
+chocolat-beurre et bien
+mélanger. Mettre le
+tout à cuire et à la
+sortie du four, laissez
+le gâteau refroidir
+même s'il ne paraît pas
+cuit.
+]]
+}
+-------------------
+
+-- Biographie de Saulors II, roi d'Hyrule
+dialog{
+  id = "library_1f.book_biography1",
+  question = true,
+  text = [[
+La biographie de
+l'ancien roi Saulors II
+ayant gouverné il y a
+deux siècles.
+Non merci
+A voir
+]]
+}
+
+dialog{
+  id = "library_1f.read_biography1",
+  skip = "all",
+  text = [[
+Le roi Saulors II était
+connu pour être un roi
+peu enclin à l'humour
+et à la joie de vivre.
+C'est sous son règne
+qu'a eu lieu l'affreuse
+Bataille de Rigsta,
+encouragé par sa cour.
+Le peuple ne pouvait
+pas se considérer comme
+opprimé car le roi le
+défendait, mais les
+fêtes n'étaient pas
+monnaie courante. Cela
+viendrait du fait que
+dans son enfance, le
+jeune Prince vécu de
+plein fouet la mort de
+sa mère, dévorée par
+une meute de loup alors
+qu'il était en sécurité
+en haut d'un arbre.
+Ce fût une époque très
+stable pour le royaume,
+noyé dans la rigueur de
+l'abnégation et du
+travail.
+Le roi Saulors II se
+retira du pouvoir de
+son vivant, quelques
+semaines avant sa mort,
+à 72 ans, laissant le
+trône à son fils Elor.
+]]
+}
+-------------------
+
+-- Biographie de Sahasrahla
+dialog{
+  id = "library_1f.book_biography2",
+  question = true,
+  text = [[
+La biographie du vieux
+Sahasrahla, le sage du
+village.
+Le lire ?
+Non
+Oui
+]]
+}
+
+dialog{
+  id = "library_1f.read_biography2",
+  skip = "all",
+  text = [[
+Rares sont les gens
+ayant droit à une
+biographie de leur
+vivant. Sahasrahla est
+l'un de ces privilégiés
+du fait de son statut
+exceptionnel. Membre de
+l'espèce méconnue des
+Fiarons, il possède une
+longévité peu commune,
+et a connu bien des
+époques troublées. Là
+où certains des membres
+de son espèce auraient
+laissé le flot du temps
+oeuvrer, il s'interposa
+constamment aux forces
+du Mal, faisant plus
+d'une fois capoter les
+machiavéliques plans de
+Ganon et ses minions.
+Il est l'un des Sept
+Sages, et un seul
+livre ne suffira pas
+à compter sa vie.
+]]
+}
+-------------------
+
+-- Livre d'Histoire (1 : époque sombre)
+dialog{
+  id = "library_1f.book_hyrule_historia1",
+  question = true,
+  text = [[
+Un livre d'histoire...
+Jamais !
+J'adore !
+]]
+}
+
+dialog{
+  id = "library_1f.read_hyrule_historia1",
+  skip = "all",
+  text = [[
+Il y a de cela environ
+huit siècles, Hyrule
+vivait une sombre ère.
+Le royaume n'avait pas
+d'héritier et les
+différents régents se
+poignardaient dans le
+dos pour avoir la
+gouvernance. Tous les
+deux ou trois ans, un
+coup d'état avait lieu
+et un nouveau dirigeant
+prenait place. Le fait
+que le royaume était
+extrêmement riche en
+ressources naturelles
+et surnaturelles est
+une explication toute
+trouvée à ce sombre jeu
+de pouvoir. Un jour, un
+héros apparut et défia
+l'autorité en place. Il
+n'était pas de sang
+noble, mais était juste
+et loyal. Il réussit à
+piéger le régent du
+moment et gouverna
+sous les acclamations
+du peuple. Mais ce
+dernier craignait à
+nouveau un assassinat.
+Le pays nécessitant un
+un gouvernement stable
+et durable, le héros
+décida que dès ce jour,
+sa lignée deviendrait
+royale. Aussi, sa
+famille étant grande
+contrairement à ses
+prédecesseurs, les
+coups d'état devinrent
+inutiles, la succession
+au trône s'opérant sur
+sa famille et non sur
+l'assassin. S'ensuivit
+une longue lignée de
+rois et reines qui
+perdure encore de nos
+jours.
+]]
+}
+-------------------
+
+-- Livre d'Histoire (2 : époque récente)
+dialog{
+  id = "library_1f.book_hyrule_historia2",
+  question = true,
+  text = [[
+Un livre d'histoire...
+J'ai poney
+Toujours partant
+]]
+}
+
+dialog{
+  id = "library_1f.read_hyrule_historia2",
+  skip = "all",
+  text = [[
+La guerre ayant eu lieu
+il y a de cela environ
+150 ans, fut déclarée
+par l'arrière grand-
+père de notre roi
+actuel et par le fils
+de Saulors II : Elor V.
+Elle impliqua deux pays
+voisins : Technika et
+Hampob. Malgré ce fait,
+le conflit ne prit pas
+une énorme ampleur,
+tout juste se cantonna-
+t-il aux régions près
+des frontières. Il dura
+exactement quatre ans,
+deux mois et un jour
+après la déclaration
+officielle. L'origine
+était la dispute de
+la propriété des mines
+et carrières, alors
+appartenant uniquement
+à Hampob. Certaines
+veines s'enfonçaient
+profondément dans les
+royaumes impliqués,
+et Elor V décida que
+les richesses devaient
+être partagées. C'est
+après la première
+bataille que Technika
+comprit qu'il était
+aussi impliqué, et le
+duel devint un conflit
+à trois. Au final, un
+consensus fut accordé
+sur le partage des
+richesses. Dans le
+calcul du partage entre
+en considération le
+temps passé par le pays
+extracteur, la position
+du filon et la rareté
+de ce dernier par
+rapport aux autres
+mines du pays. 
+]]
+}
+-------------------
+
+-- Fantasy
+dialog{
+  id = "library_1f.book_fantasy",
+  question = true,
+  text = [[
+Une histoire fantasy
+Sans intérêt
+Curieux
+]]
+}
+
+dialog{
+  id = "library_1f.read_fantasy",
+  skip = "all",
+  text = [[
+Une curieuse histoire à
+propos d'une tortue
+géante qui parcourt
+l'univers avec sur son
+dos un monde plat. Cela
+n'a aucun sens.
+]]
+}
+-------------------
+
+-- Science Fiction
+dialog{
+  id = "library_1f.book_science_fiction",
+  question = true,
+  text = [[
+De la S-F
+Super...
+Super !
+]]
+}
+
+dialog{
+  id = "library_1f.read_science_fiction",
+  skip = "all",
+  text = [[
+Une étrange histoire à
+propos d'un garçon qui
+manie un pouvoir
+invisible et qui s'en
+sert pour contrer un
+Empire détruisant des
+planètes. Mais le chef
+des armées est son père
+et le garçon l'ignore.
+Quelle histoire à
+dormir debout ! Ça ne
+marchera jamais.
+]]
+}
+-------------------
+
+-- Bouquin humoristique
+dialog{
+  id = "library_1f.book_humor",
+  question = true,
+  text = [[
+Un livre humoristique
+Le reposer
+Le lire
+]]
+}
+
+dialog{
+  id = "library_1f.read_humor",
+  skip = "all",
+  text = [[
+C'est un moblin qui
+croise un gobelin, et
+il lui dit :
+"- Hé toi, avec ton
+casque à cornes !
+Présente-moi ta femme,
+tu sauras pourquoi t'as
+des cornes !"
+
+Une sorcière très imbu
+d'elle-même se balade
+dans la forêt quand
+soudain, elle tombe sur
+un dragon. Sans faire
+attention, le dragon
+lui marche sur le pied,
+et la sorcière râle :
+"- Ben dites-donc, vous
+ne manquez pas de
+souffle !"
+
+Qu'est-ce qui est petit
+et marron ?
+Un marron.
+]]
+}
+-------------------
+
+-- Bouquin sur le théâtre
+dialog{
+  id = "library_1f.book_theater",
+  question = true,
+  text = [[
+Une pièce de théâtre
+Trop classique
+Toujours agréable
+]]
+}
+
+dialog{
+  id = "library_1f.read_theater",
+  skip = "all",
+  text = [[
+Acte 1, scène 1
+Un combat à l'épée se
+fait entendre après
+le lever de rideau. Les
+deux protagonistes
+principaux entrent en
+scène, participant à
+un duel. May, vêtu de
+blanc, combat Sen en
+bleu.
+M : "Mais pourquoi es-
+tu si obstiné ? Tu ne
+vois pas que c'est
+peine perdue ? Elle ne
+t'aime pas et ne veux
+pas de toi !"
+S : "Ce n'est pas ce
+que j'ai pensé de ses
+baisers de cette nuit."
+M : "Tu mens. Elle est
+promise à ma famille
+depuis des lustres. Il
+faut régler cela sur le
+champ. Je propose que
+ce duel se fasse à mort
+afin d'avoir un
+vainqueur incontesté."
+Les deux chevaliers
+continuent à combattre
+jusqu'aux coulisses.
+Acte 1, scène 2
+Monologue de la reine.
+"Ces malotrus pensent
+pouvoir gagner la main
+de ma fille aussi
+facilement. Personne ne
+doit jamais la cotoyer,
+il en va du plus lourd
+secret de notre clan.
+Mais autant profiter de
+cette volonté de plaire
+pour conquérir quelques
+nouvelles richesses."
+La reine s'en va d'un
+rire maléfique...
+]]
+}
+-------------------
+
+-- Bouquin sur le théâtre
+dialog{
+  id = "library_1f.book_police",
+  question = true,
+  text = [[
+Une intrigue policière.
+Oublions
+En avant !
+]]
+}
+
+dialog{
+  id = "library_1f.read_police",
+  skip = "all",
+  text = [[
+Un palace, un meurtre,
+et des suspects de plus
+en plus nombreux au fur
+et à mesure que
+l'enquête évolue. Le
+célèbre Sherlink Holmes
+n'allait pas être de
+trop pour résoudre
+cette sordide affaire.
+Il débuta en demandant
+au maître des lieux de
+donner ses relations
+avec la victime, son
+fils. C'était tendu,
+selon l'employé faisant
+le ménage. Il aurait
+très bien pu soit le
+faire tuer en engageant
+quelqu'un, soit le
+faire de lui-même. Mais
+Sherlink ne croyait pas
+à cette seconde théorie
+car le maître était
+trop intelligent pour
+s'impliquer réellement
+dans un meurtre. Cela
+signifiait que son
+complice était toujours
+dans cette maison, et
+Sherlink était bien
+décidé à lui mettre le
+grappin dessus.
+]]
+}
+-------------------
+
+-- Livre pour enfant
+dialog{
+  id = "library_1f.book_child",
+  question = true,
+  text = [[
+Un livre pour enfant
+C'est une blague ?
+J'ai su rester jeune
+]]
+}
+
+dialog{
+  id = "library_1f.read_child",
+  skip = "all",
+  text = [[
+Un jeune garçon est
+persécuté par sa belle-
+famille, chez qui il
+vit depuis des années
+car ses parents sont
+morts dans un combat
+contre un sorcier
+maléfique. Il ignore
+qu'il est lui-même
+un sorcier, mais des
+choses étranges lui
+arrivent, souvent quand
+il est en colère ou
+triste. Le jour de
+ses 11 ans, il reçoit
+une lettre d'une école
+de sorcellerie lui
+indiquant qu'il y est
+inscrit depuis sa
+naissance mais qu'ils
+attendaient le bon
+moment pour lui dire
+de venir. S'en suit
+plein d'aventures.
+Il paraît que ce livre
+a un succès fulgurant
+auprès des adolescents.
+]]
+}
+-------------------
+
+-- Contes
+dialog{
+  id = "library_1f.book_tales",
+  question = true,
+  text = [[
+Un conte bien connu.
+C'est nul
+C'est cool
+]]
+}
+
+dialog{
+  id = "library_1f.read_tales",
+  skip = "all",
+  text = [[
+Il était une fois, dans
+un lointain pays, un
+joyeux Roi qui aimait
+les bonbons. Ce Roi
+gouvernait un pays de
+liberté et d'amour. Un
+jour, le Roi décida de
+demander à ses fidèles
+troubadours d'inventer
+un jeu contant l'épopée
+d'un chercheur de ces
+bonbons qu'il aimait
+tant. Une fois le jeu
+inventé, le Roi se mit
+à y jouer encore et
+encore. Ses sujets,
+interloqués, se mirent
+à essayer ce jeu. Et
+tout le monde s'en
+amusa : il s'agissait
+d'une sorte de puzzle
+dans lequel il fallait
+inverser deux bonbons
+pour en aligner trois
+de la même couleur. Ces
+bonbons étaient alors
+remplacées par d'autres
+et ainsi de suite. Mais
+tout le monde n'avait
+pas toujours des
+friandises à portée de
+main, aussi les gens
+improvisaient-ils avec
+ce qu'il leur tombait
+sous la main.
+Quand le Roi apprit que
+des sujets délaissaient
+leur travail pour jouer
+à son jeu modifié, il
+piqua une colère noire.
+Il interdit toute copie
+de son jeu, et sa folie
+gagna même les mots
+pris pour le titre de
+son amusement. Ainsi,
+les sujets n'avaient
+plus le droit de jouer
+à quoi que ce soit à
+base de bonbons. C'en
+était trop pour le
+peuple, et très vite il
+se souleva. Le roi,
+comprenant son erreur,
+leur demanda pardon.
+Le peuple, bon joueur,
+lui fit juste retirer
+son décret et tout le
+monde put de nouveau
+jouer en paix.
+]]
+}
+-------------------
+
+-- Un livre sur le jardinage
+dialog{
+  id = "library_1f.book_gardening",
+  question = true,
+  text = [[
+"Soigner son jardin"
+Pfff...
+Testons
+]]
+}
+
+dialog{
+  id = "library_1f.read_gardening",
+  skip = "all",
+  text = [[
+La joie d'un jardin au
+meilleur de sa forme
+est un sentiment d'une
+grande force pour le
+jardinier amateur ou
+accompli. Mais qu'est
+un jardin réussi ? Nous
+allons essayer d'y
+répondre du mieux que
+nous pouvons. Certaines
+bourgades estiment que
+le jardin doit rester
+libre et s'épanouir par
+lui-même, mais laissons
+ces sauvageries de côté
+car nous savons tous
+que le jardin parfait
+est un jardin bien 
+entretenu. Les allées
+doivent être dégagées,
+aidant à la circulation
+des visiteurs. Les
+couleurs doivent être
+en pleine harmonie et
+reposer la personne qui
+contemple votre oeuvre.
+Les buissons devront
+être taillés dans une
+pose évoquant élan et
+majesté, et le vent
+bruissant dans les
+feuilles devra faire
+bouger l'ensemble d'un
+accord parfait. Ainsi
+seulement le jardinier
+pourra considérer son
+oeuvre comme accomplie.
+]]
+}
+-------------------
+
+-- Un guide touristique
+dialog{
+  id = "library_1f.book_tourism",
+  question = true,
+  text = [[
+Un guide touristique
+Je sais déjà tout
+Préparons-nous
+]]
+}
+
+dialog{
+  id = "library_1f.read_tourism",
+  skip = "all",
+  text = [[
+La région est l'une des
+plus variées et aussi
+l'une des plus belles
+de notre beau pays. A
+l'ouest se trouve un
+lac surplombé du Temple
+de l'Eau, vers l'Est se
+situe une forêt réputée
+impénétrable. Cette
+forêt cacherait en son
+sein un pouvoir immense
+mais nul n'a jamais pu
+le découvrir car elle
+brouille les sens et
+joue avec les nerfs de
+ses arpenteurs. Au nord
+se situe une des plus
+hautes montagnes du
+monde, tandis qu'au sud
+des plaines arides,
+infestées de bêtes et
+de monstres, s'étendent
+à perte de vue. Rare
+sont les personnes qui
+peuvent se vanter 
+d'avoir visité le pays
+dans sa globalité, tant
+les climats y sont
+multiples et variés.
+]]
+}
+-------------------
+
+-- Livre philosophique
+dialog{
+  id = "library_1f.book_philosophy",
+  question = true,
+  text = [[
+Un livre philosophique
+Ennuyeux
+Intéressant
+]]
+}
+
+dialog{
+  id = "library_1f.read_philosophy",
+  skip = "all",
+  text = [[
+Les monstres sont-ils
+tous de sanguinaires
+bêtes sans état d'âmes,
+ou peut-on penser qu'il
+y a derrière eux une
+organisation, voire une
+société que nous ne
+pouvons pas voir et que
+nous ignorons ? Peut-on
+appeler monstres toute
+créature n'ayant pas le
+même mode de vie que
+nous autres, humains,
+et doit-on les harceler
+pour autant afin de les
+soumettre à nos us et
+coutumes ? A une époque
+pas si reculée, les
+Zoras étaient tous
+considérés comme des
+monstres, pourtant ils
+sont devenus de fidèles
+alliés. Que doit-on en
+déduire, ne serait-ce
+pas le cas pour les
+autres espèces, que
+nous nous échinons à
+combattre mordicus au
+lieu d'essayer de créer
+un dialogue avec eux.
+Ils ont des chefs, des
+familles, de quel droit
+nous considérons-nous
+supérieurs à eux ?
+Et même si nous étions
+en effet plus malins,
+ce serait à nous de
+cesser le combat et de
+les tirer vers le haut,
+au lieu de laisser
+libre cours à notre
+instinct de combat. Qui
+des deux côtés sont les
+monstres, entre les
+gens civilisés qui se
+laissent tenter par la
+facilité du combat et
+les peuples un peu plus
+simples qui n'ont pas
+la connaissance pour
+y échapper ?
+]]
+}
+-------------------
+
+-- Livre sur l'économie
+dialog{
+  id = "library_1f.book_economic",
+  question = true,
+  text = [[
+Un traité d'économie
+Tuez-moi !
+Lisons cela !
+]]
+}
+
+dialog{
+  id = "library_1f.read_economic",
+  skip = "all",
+  text = [[
+Certains pensent que le
+cours du rubis monte,
+mais ils se trompent.
+Les courbes sont 
+formelles, le rubis est
+en pleine chute, alors
+que le saphir monte et
+le diamant stagne. Une
+explication peut venir
+de l'abondance du rubis
+sur nos terres, car le
+plus grand problème de
+faire une monnaie avec
+des pierres précieuses
+est que la valeur a une
+forte propension à 
+fluctuer selon le bon
+vouloir de nos filons.
+Si à une époque pas si
+lointaine, le rubis
+était rare et fort, il
+est désormais devenu,
+à cause du gisement
+de la mine du Morzul,
+une denrée commune, au
+point d'être dépossédé
+de ses fins en bijoux.
+Il n'est pas rare, de
+nos jours, de voir ces
+pierres précieuses,
+gisant nonchalamment
+sur le sol, oublié par
+quelques étourdis.
+Voilà où en est le
+rubis. Notre royaume
+ne pèsera bientôt plus
+bien lourd dans les
+négociations avec les
+autres pays et devrait
+réagir au plus vite. Il
+est temps d'adopter une
+monnaie plus forte.
+]]
+}
+-------------------
+
+-- Un livre sur la politique
+dialog{
+  id = "library_1f.book_politic",
+  question = true,
+  text = [[
+"Régence et ingérance"
+Non merci...
+Pourquoi pas ?
+]]
+}
+
+dialog{
+  id = "library_1f.read_politic",
+  skip = "all",
+  text = [[
+La loi stipule que les
+princes et princesses
+de notre royaume n'ont
+le droit de monter sur
+le trône qu'à partir du
+jour de leur vingtième
+printemps. Si, par un
+malheur immense, les
+deux parents du jeune
+héritier décèdent, la
+régence se doit d'être
+assurée par un noble,
+ayant été élu par des
+membres d'une assemblée
+représentative : une
+assemblée constituée de
+10 ouvriers manuels ou
+artisans ;
+7 fermiers, éleveurs ou
+agriculteurs ;
+4 magistrats ;
+3 nobles ;
+1 membre de la famille
+royale s'il en reste,
+le dauphin étant
+autorisé à prendre part
+au vote.
+Toute ingérance sera
+sanctionnée comme acte
+de trahison, et un
+nouveau régent sera élu
+par une nouvelle
+assemblée.
+]]
+}
+-------------------
+
 -- Bibliothèque SS1 : accueil
 dialog{
   id = "library_b1.reception",
+  skip = "all",
   text = [[
 Bonjour. C'est rare de
 voir des gens descendre
 ici...
 Vous avez dans cette
 salle les rayons sur
-l'esotérisme. Un peu
+l'esotérisme, la
+religion et la
+mythologie. Un peu
 plus bas vous avez
 les recueils sur la
 géologie, la géographie
 et les documentaires.
 Plus loin encore, vous
 trouverez la section
-pour adultes, mais je
-doute que vous ayez
+pour adultes, mais...
+Je doute que vous ayez
 l'âge requis. Attention
 je veille au grain !
 Nous vendons aussi des
@@ -590,7 +1623,698 @@ ronds de flan !
 dialog{
   id = "library_b1.librarian",
   text = [[
-Ook ook. Eek.
+Oook oook. Eeek.
+]]
+}
+-------------------
+
+-- Livre interdit
+dialog{
+  id = "library_b1.forbidden_book",
+  skip = "all",
+  text = [[
+Tu n'as clairement pas
+l'âge pour lire cette
+oeuvre...
+]]
+}
+-------------------
+
+-- Livre sur l'esoterisme (1 : alchimie)
+dialog{
+  id = "library_b1.book_esoterism1",
+  question = true,
+  text = [[
+Un livre sur l'alchimie
+Refermer
+Lire
+]]
+}
+
+dialog{
+  id = "library_b1.read_esoterism1",
+  skip = "all",
+  text = [[
+L'alchimie est un sujet
+vaste. Certains pensent
+que c'est le domaine de
+la sorcellerie, à base
+d'organes d'animaux et
+autres étrangetés. Ces
+médisances nuisent à la
+profession très noble
+d'alchimiste, dont les
+représentants sauvent
+des vies tous les jours
+en parfaite amitié avec
+les médecins. Il s'agit
+d'un art délicat dans
+lequel une personne va
+simplement faire des
+changements structurels
+profonds avec un
+environnement donné,
+pour en extraire les
+meilleurs effets. Sans
+l'alchimie, bien des
+potions deviendraient
+inutiles et bien des
+héros auraient péri en
+tentant de sauver nos
+terres des forces
+maléfiques. Nier cela
+est une infâmie.
+]]
+}
+-------------------
+
+-- Livre sur l'esoterisme (2 : talismanie)
+dialog{
+  id = "library_b1.book_esoterism2",
+  question = true,
+  text = [[
+Un traité de talismanie
+Aucun intérêt
+Lire
+]]
+}
+
+dialog{
+  id = "library_b1.read_esoterism2",
+  skip = "all",
+  text = [[
+Talisman de protection
+- Du poison de scorpion
+et de lizalfos
+- 30g d'ambre gris
+- Un os de lion
+- Une corne d'auroch
+- Un saphir
+Recette :
+Réduire l'ambre en fine
+poudre, concasser l'os
+et la corne et mélanger
+les poisons à la poudre
+ainsi obtenue. Une fois
+la pâte uniforme,
+en enduire le saphir et
+laisser reposer une
+nuit à la pleine lune.
+Le lendemain, nettoyer
+avec un chiffon humide,
+et porter le saphir en
+pendentif. Il protègera
+le porteur de toute
+faiblesse suite à une
+blessure.
+Talisman d'attaque
+- Une griffe de lion,
+une de loup et deux de
+moblins
+- 50g d'ébène
+- 50ml d'huile de zora
+Recette :
+Faire bouillir l'huile,
+y laisser tremper les
+griffes pendant 5 jours
+et 5 nuits. Au matin du
+sixième jour, verser
+l'huile sur l'ébène et
+le refroidir de suite.
+Rayer l'ébène avec
+chaque griffe, et
+croiser les rayures en
+un seul point. Poser
+ensuite le rubis sur
+ce croisement, et y
+verser le sang du futur
+porteur. Monter le
+rubis en bague.
+]]
+}
+-------------------
+
+-- Livre sur la religion (1 : la création du monde)
+dialog{
+  id = "library_b1.book_religion1",
+  question = true,
+  text = [[
+Une Bible sur la
+façon dont a été
+créé le monde.
+Un sacré pavé à lire...
+Oublions
+Allons-y !
+]]
+}
+
+dialog{
+  id = "library_b1.read_religion1",
+  skip = "all",
+  text = [[
+Au commencement était
+le Néant. Du Néant
+naquirent les déesses,
+trois entités tirant
+leur puissance du Grand
+Vide.
+Din, déesse de la Force
+apporta le Feu Sacré.
+Une gigantesque Boule
+Incandescente surgit du
+Néant, créant Soleil,
+Lumière et Chaleur
+indispensable à toute
+vie, et passa le relais
+à sa Soeur.
+Émergea Nayru, Déesse
+de la Sagesse, donnant
+la douceur de l'Eau
+Pure au monde. De la
+lave mêlée d'eau naquit
+la Terre. Sentant qu'il
+manquait un élément
+essentiel qu'elle ne
+maîtrisait pas, la
+divinité d'azur laissa
+place à sa dernière
+soeur.
+Apparut alors Farore,
+Déesse du Courage et de
+la Nature, amenant la
+vie à naître, défendant
+ses enfants de la
+trop grande puissance
+du Soleil par l'ombrage
+des arbres, ces mêmes
+entités qui apportèrent
+l'Eau Pure afin de les
+rafraîchir et les
+détendre.
+Ainsi naquit notre
+monde, de la bonté de
+trois êtres supérieurs
+et bienveillants. Mais
+d'autres mondes avaient
+besoin d'eux, aussi
+décidèrent-ils de
+quitter ce monde afin
+de les aider. Laissant
+derrière eux une
+relique sacrée, ils y
+lièrent leur esprit,
+donnant à celui qui la
+manie une partie de
+leur pouvoir. Cette
+relique, bien connue,
+s'appelle la Triforce.
+]]
+}
+-------------------
+
+-- Livre sur la religion (2 : le début du Darwinisme)
+dialog{
+  id = "library_b1.book_religion2",
+  question = true,
+  text = [[
+Un traité alternatif à
+propos de la Création
+du monde...
+Un sacré pavé à lire...
+Pas la peine
+Bien sûr !
+]]
+}
+
+dialog{
+  id = "library_b1.read_religion2",
+  skip = "all",
+  text = [[
+Certains pensent que
+les êtres vivants ont
+tous été créés par des
+déesses au Pouvoir
+Infini. Tout cela n'a
+aucun sens. Après avoir
+étudié pendant quinze
+années de ma vie les
+Souris Avides, voici
+les conclusions de mes
+expériences, réfutant
+la théorie des Déesses.
+EXPÉRIENCE PREMIERE :
+Les souris sont mises
+dans une obscurité
+absolue pendant trente
+générations. Il apparaît
+de façon significative
+que leur ouïe s'est
+développée, et leur
+robe s'est décolorée.
+EXPÉRIENCE SECONDE :
+Les souris sont mises
+dans un environnement
+arboricole avec des
+couleurs très vives.
+Toujours après 30
+générations, les
+souris ont vu leur
+robe devenir plus vive
+et servir à la parade
+nuptiale, et des
+membranes sont apparues
+entre leurs pattes afin
+d'aider au déplacement
+entre les arbres.
+CONCLUSIONS :
+Des mutations se sont
+produites chez certains
+individus, leur donnant
+un avantage de survie
+par rapport aux autres.
+De fait, ces individus
+se sont plus reproduits
+que les autres,
+permettant la
+transmission de ces
+nouveaux caractères,
+faisant au final
+évoluer l'espèce. Il me
+semble évident que des
+études approfondies
+doivent être menées
+pour mieux connaître
+nos origines.
+]]
+}
+-------------------
+
+-- Livre sur la mythologie (1 : le Temple de l'Alhuz)
+dialog{
+  id = "library_b1.book_mythology1",
+  question = true,
+  text = [[
+Le Temple de l'Alhuz
+Non merci...
+Intéressant
+]]
+}
+
+dialog{
+  id = "library_b1.read_mythology1",
+  skip = "all",
+  text = [[
+L'architecte divin du
+nom de l'Alhuz était
+un être étrange. Il
+était un élu des dieux
+mais pourtant incapable
+de concevoir un piège
+correctement. Il était
+intouchable de par son
+cousinage avec la Fée
+Majestueuse. C'est
+ainsi que les dieux
+décidèrent d'exaucer
+son voeu le plus cher :
+le laisser créer son
+Temple attitré.
+Cela lui pris deux
+décennies, mais le
+temple fut achevé.
+Comme les dieux le
+craignaient, c'était
+une catastrophe d'un
+point de vue conception
+car la plupart des
+énigmes étaient soit
+impossibles à résoudre,
+soit tellement simples
+qu'un nourrisson
+pouvait passer. Mais le
+point d'orgue de ce
+Temple, c'était la
+position de la salle
+du trésor par rapport à
+son entrée. Elle se
+trouvait en face de
+l'entrée, séparée par à
+peine un rideau. De
+l'aveu de l'Alhuz, il
+était bien forcé de
+créer l'entrée et la
+salle du trésor en
+premier pour avoir
+matière à protéger.
+Ce Temple devint très
+vite une attraction
+avec le temps, mais le
+Roi Saulors II ordonna
+sa destruction durant
+son règne.
+]]
+}
+-------------------
+
+-- Livre sur la mythologie (2 : le Dieu Unique)
+dialog{
+  id = "library_b1.book_mythology2",
+  question = true,
+  text = [[
+Croyance d'autre monde
+Reposer le livre
+Dévorer le livre
+]]
+}
+
+dialog{
+  id = "library_b1.read_mythology2",
+  skip = "all",
+  text = [[
+Dans des lointaines
+contrées existent des
+légendes étranges. Dans
+l'une d'elle, le peuple
+pense qu'il n'y a qu'un
+Dieu unique, et malgré
+la ressemblance de
+leurs religions, les
+divers pays guerroient
+afin de savoir quelle
+religion est la plus
+proche de la vérité. En
+effet, chaque peuple
+croit en la même entité
+mais ne s'accorde pas
+sur la façon dont cette
+dernière a été créé, ou
+comment ses prophètes
+ont vécu. Les autres
+mondes ont tant à nous
+apprendre, mais une
+chose est sûre : ils
+ne nous apprendront
+jamais la tolérance,
+l'amour et la bonté.
+]]
+}
+-------------------
+
+-- Livre sur la géologie
+dialog{
+  id = "library_b1.book_geology",
+  question = true,
+  text = [[
+Traité sur les minerais
+Et puis quoi encore ?
+Pourquoi pas ?
+]]
+}
+
+dialog{
+  id = "library_b1.read_geology",
+  skip = "all",
+  text = [[
+Il existe énormément de
+biens que peut nous
+fournir une mine. Parmi
+les plus intéressants
+se trouvent les Pierres
+Élémentaires. Découlant
+directement des trois
+Déesses, elles sont les
+suivantes :
+- La Pierre de Feu, au
+pouvoir directement
+relié à l'esprit de Din
+et pouvant réchauffer
+le corps et le coeur de
+son possesseur. Souvent
+utilisée pour guérir de
+la dépression, elle a
+un pouvoir relaxant à
+quiconque la scrute
+assez longtemps. Elle a
+déjà prouvé son utilité
+en alchimie, en magie
+et en médecine
+traditionnelle.
+- La Pierre d'Eau, au
+pouvoir directement
+relié à l'esprit de
+Nayru et pouvant calmer
+les monstres et les
+bêtes les plus féroces.
+Souvent utilisée dans
+les expéditions, elle
+génère constamment de
+l'eau douce et pure en
+un mince filet, rendant
+cette Pierre très chère
+dans le désert par sa
+nécessité en plus de sa
+rareté.
+- La Pierre de Nature,
+au pouvoir directement
+relié à l'esprit de
+Farore et pouvant faire
+revivre les êtres en
+train de mourir.
+Cette Pierre est sans
+conteste la plus rare
+et la plus convoité,
+réputée pour offrir
+l'immortalité à celui
+qui la garde sur lui.
+C'est aussi la seule
+Pierre qui se vide de
+son pouvoir une fois
+celui-ci utilisé, mais
+tant que la Pierre est
+en contact direct avec
+son porteur, alors le
+pouvoir reste.
+]]
+}
+-------------------
+
+-- Livre d'un cartographe
+dialog{
+  id = "library_b1.book_geography",
+  question = true,
+  text = [[
+Un livre de cartographe
+Plus tard
+A voir
+]]
+}
+
+dialog{
+  id = "library_b1.read_geography",
+  skip = "all",
+  text = [[
+Le plus difficile pour
+un cartographe n'est
+pas de dessiner, de se
+repérer ou de respecter
+des proportions parfois
+extravagantes demandées
+par son commanditeur,
+mais bel et bien de
+survivre à ces Terres
+infestées de créatures
+toutes plus agressives
+les unes que les autres
+et cherchant à dépecer
+le pauvre humain
+pénétrant sur leur
+territoire. C'est pour
+cela que bien des
+compagnies ont fait de
+l'escorte leur gagne-
+pain, notre profession
+en ayant cruellement
+besoin. Ainsi, d'êtres
+assoiffés de sang, nous
+devons désormais nous
+arranger avec des êtres
+assoiffés d'argent. Le
+plus difficile pour un
+cartographe maintenant
+est de survivre à ces
+Terres infestées de
+compagnies toutes plus
+cupides les unes que
+les autres. Si un héros
+lit ces lignes et voit
+un jour un membre de
+notre métier qui est
+dans le besoin, soyez
+noble, et ne demandez
+pas de récompense pour
+votre bonne action :
+vous pourriez avoir
+sauvé celui qui un jour
+dessinera la carte vous
+sauvant d'un dédale.
+]]
+}
+-------------------
+
+-- Bestiaire des alentours
+dialog{
+  id = "library_b1.book_documentary",
+  question = true,
+  text = [[
+Un bestiaire du coin
+Inutile
+Mieux vaut lire.
+]]
+}
+
+dialog{
+  id = "library_b1.read_documentary",
+  skip = "all",
+  text = [[
+*** Popo ***
+Créature faible et
+fragile, elle tentera
+de se frayer un chemin
+jusqu'à sa cible, même
+s'il faut pour cela
+faire un détour. Plus
+intelligente qu'on ne
+pourrait le croire, à
+tuer avant qu'elle ne
+devienne une gêne ou
+s'allie à d'autres.
+*** Skeletor ***
+Victime d'un nécromant,
+détruire ces squelettes
+revenus à la vie, c'est
+leur rendre service.
+Ils sont plus bêtes que
+méchants, aussi ils
+fonceront tête baissée
+vers vous, quitte à se
+bloquer derrière un mur
+qu'il suffirait de
+contourner.
+*** Mercenaire ***
+Bien qu'un peu exagéré,
+on peut penser que le
+mercenaire est une bête
+car il est sans foi ni
+loi. Généralement vêtu
+tel un soldat, on peut
+se faire avoir par
+inadvertance. Croiser
+le fer avec lui fera
+reculer les deux
+opposants, il vaut
+mieux l'attaquer sur le
+flanc.
+]]
+}
+-------------------
+
+-- Livre sur la guerre
+dialog{
+  id = "library_b1.book_war",
+  question = true,
+  text = [[
+Un livre sur la guerre
+Refermer
+Lire
+]]
+}
+
+dialog{
+  id = "library_b1.read_war",
+  skip = "all",
+  text = [[
+Du sang. Des tripes.
+Des pleurs. De la
+haine. Voilà ce que
+j'ai retenu de la
+boucherie qu'on appelle
+la Bataille de Rigsta.
+Il n'y avait aucun clan
+opposé après ce jour.
+Juste deux familles
+meurtries. Je sentais
+encore la lame frôler
+mon coeur, lacérant
+mes muscles, perçant
+mon poumon, brisant mes
+côtes. Bien des nuits
+allaient être agitées
+après ça. Tout ça pour
+une simple querelle,
+qui avait dégénérée de
+façon inexplicable.
+Mais ma peine n'était
+pas finie, loin de là.
+La suite sera bien plus
+difficile, aussi je
+conseille aux âmes
+sensibles de refermer
+ce livre.
+]]
+}
+-------------------
+
+-- Livre sur la guerre
+dialog{
+  id = "library_b1.book_torture",
+  question = true,
+  text = [[
+Un livre sur la torture
+Le reposer
+Lire malgré tout
+]]
+}
+
+dialog{
+  id = "library_b1.read_torture",
+  skip = "all",
+  text = [[
+Il existe bien des
+façons de faire parler
+un monstre sur la
+position d'un trésor ou
+de son maître. Avec
+quelques instruments et
+un bon savoir-faire,
+tout peut être très
+expédié très rapidement
+mais il faut avoir le
+coeur bien accroché.
+
+Broyer les os un à un
+est une façon de faire,
+mais réalisé par un
+amateur, l'interrogé
+fera une hémorragie
+interne et risque de
+trépasser avant d'avoir
+livré ses secrets. Il
+vaut mieux s'attaquer
+aux mains et aux pieds.
+Le fer chauffé à blanc
+est aussi excellent
+pour faire craquer le
+rétif. Mais le plus
+efficace reste tout
+ce qui est membres à
+arracher, du moment
+que l'on empêche le
+sujet de défaillir.
+L'énucléation, la
+castration, et épiler
+le nez ont toujours eu
+les meilleurs résultats
+de ma carrière.
 ]]
 }
 -------------------

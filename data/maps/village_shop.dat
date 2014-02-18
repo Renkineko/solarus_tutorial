@@ -1383,10 +1383,20 @@ npc{
   layer = 1,
   x = 80,
   y = 53,
+  name = "shop_seller",
   direction = 3,
   subtype = "1",
   sprite = "npc/static_villager6",
   behavior = "dialog#shop.npc",
+}
+
+npc{
+  layer = 1,
+  x = 80,
+  y = 85,
+  name = "shop_counter",
+  direction = 3,
+  subtype = "0",
 }
 
 tile{
