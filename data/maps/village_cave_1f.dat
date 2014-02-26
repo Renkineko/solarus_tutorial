@@ -47,15 +47,6 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 40,
-  width = 192,
-  height = 24,
-  pattern = 224,
-}
-
-tile{
-  layer = 0,
-  x = 64,
   y = 224,
   width = 192,
   height = 24,
@@ -316,33 +307,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = 250,
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 48,
-  width = 8,
-  height = 16,
-  pattern = 286,
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 48,
-  width = 8,
-  height = 16,
-  pattern = 285,
-}
-
-tile{
-  layer = 0,
   x = 104,
   y = 248,
   width = 8,
@@ -431,31 +395,13 @@ tile{
   pattern = 362,
 }
 
-stairs{
+tile{
   layer = 0,
-  x = 80,
-  y = 48,
-  direction = 1,
-  subtype = "0",
-}
-
-teletransporter{
-  layer = 0,
-  x = 80,
-  y = 48,
-  width = 16,
-  height = 16,
-  transition = 1,
-  destination_map = "village_cave_2f",
-  destination = "from_1f",
-}
-
-destination{
-  layer = 0,
-  x = 88,
-  y = 61,
-  name = "from_2f",
-  direction = 3,
+  x = 64,
+  y = 40,
+  width = 192,
+  height = 24,
+  pattern = 224,
 }
 
 destination{
@@ -783,24 +729,6 @@ tile{
   width = 24,
   height = 8,
   pattern = 332,
-}
-
-tile{
-  layer = 1,
-  x = 72,
-  y = 40,
-  width = 32,
-  height = 8,
-  pattern = 311,
-}
-
-tile{
-  layer = 1,
-  x = 80,
-  y = 40,
-  width = 16,
-  height = 8,
-  pattern = 349,
 }
 
 tile{

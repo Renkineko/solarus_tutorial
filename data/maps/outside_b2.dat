@@ -2055,7 +2055,7 @@ tile{
   layer = 0,
   x = 848,
   y = 224,
-  width = 112,
+  width = 48,
   height = 16,
   pattern = 177,
 }
@@ -2100,7 +2100,7 @@ tile{
   layer = 0,
   x = 848,
   y = 208,
-  width = 112,
+  width = 48,
   height = 16,
   pattern = 192,
 }
@@ -2634,33 +2634,6 @@ tile{
   width = 16,
   height = 16,
   pattern = 609,
-}
-
-tile{
-  layer = 0,
-  x = 888,
-  y = 200,
-  width = 8,
-  height = 40,
-  pattern = 810,
-}
-
-tile{
-  layer = 0,
-  x = 896,
-  y = 200,
-  width = 16,
-  height = 40,
-  pattern = 812,
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 200,
-  width = 8,
-  height = 40,
-  pattern = 811,
 }
 
 tile{
@@ -8747,6 +8720,24 @@ tile{
   pattern = 503,
 }
 
+tile{
+  layer = 0,
+  x = 912,
+  y = 224,
+  width = 48,
+  height = 16,
+  pattern = 177,
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 208,
+  width = 48,
+  height = 16,
+  pattern = 192,
+}
+
 destination{
   layer = 0,
   x = 480,
@@ -9299,6 +9290,71 @@ npc{
   subtype = "0",
   sprite = "entities/sign",
   behavior = "dialog#outside_b2.shop_sign",
+}
+
+switch{
+  layer = 0,
+  x = 856,
+  y = 240,
+  name = "ladder_switch",
+  subtype = "3",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 896,
+  y = 208,
+  width = 16,
+  height = 16,
+  name = "ladder_off_tile_2",
+  pattern = 192,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 896,
+  y = 224,
+  width = 16,
+  height = 16,
+  name = "ladder_off_tile",
+  pattern = 177,
+  enabled_at_start = true,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 888,
+  y = 200,
+  width = 8,
+  height = 40,
+  name = "ladder_on_tile",
+  pattern = 810,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 896,
+  y = 200,
+  width = 16,
+  height = 40,
+  name = "ladder_on_tile_2",
+  pattern = 812,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 912,
+  y = 200,
+  width = 8,
+  height = 40,
+  name = "ladder_on_tile_3",
+  pattern = 811,
+  enabled_at_start = false,
 }
 
 tile{
